@@ -74,7 +74,7 @@ I then benchmark the unsupervised methods against a supervised baseline.
 | Model                 | ROC AUC  | PR AUC | Precision@1% | Recall@1% | Precision@0.5% | Recall@0.5% |
 |-----------------------|----------|--------|--------------|-----------|----------------|-------------|
 | Isolation Forest      | 0.95     | 0.24   | 0.11         | 0.66      | 0.18           | 0.52        |
-| Local Outlier Factor  |          |        |              |           |                |             |
+| Local Outlier Factor  | 0.96     | 0.45   | 0.14         | 0.82      | 0.28           | 0.80        |
 | One-Class SVM         |          |        |              |           |                |             |
 | **Supervised XGBoost**|          |        |              |           |                |             |
 
