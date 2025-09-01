@@ -65,7 +65,6 @@ I then benchmark the unsupervised methods against a supervised baseline.
 - **Transaction amount by class** (log scale)
 - **Anomaly score histograms** (fraud vs. non-fraud)
 - **Precision–Recall curves**
-- **t-SNE projection** of transactions coloured by anomaly score
 
 ---
 
