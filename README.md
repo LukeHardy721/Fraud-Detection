@@ -71,12 +71,14 @@ I then benchmark the unsupervised methods against a supervised baseline.
 
 ## 🚀 Results Summary
 
-| Model                 | ROC AUC  | PR AUC | Precision@1% | Recall@1% | Precision@0.5% | Recall@0.5% |
-|-----------------------|----------|--------|--------------|-----------|----------------|-------------|
-| Isolation Forest      | 0.95     | 0.24   | 0.11         | 0.66      | 0.18           | 0.52        |
-| Local Outlier Factor  | 0.96     | 0.45   | 0.14         | 0.82      | 0.28           | 0.80        |
-| One-Class SVM         |          |        |              |           |                |             |
-| **Supervised XGBoost**|          |        |              |           |                |             |
+| Model                 | ROC AUC  | PR AUC | Precision@1% | Recall@1% |
+|-----------------------|----------|--------|--------------|-----------|
+| Isolation Forest      | 0.95     | 0.24   | 0.11         | 0.66      |
+| Local Outlier Factor* | 0.96     | 0.45   | 0.14         | 0.82      |
+| One-Class SVM         | 0.94     | 0.13   | 0.13         | 0.78      |
+| **Supervised XGBoost**|          |        |              |           |
+
+*Note that Local Outlier Factor (LOF) further achieved 0.80 recall with 0.28 precision at 0.5%, meaning that by reviewing 0.5% of transactions, one could catch 80% of fraudulent transactions. This is a 160x improvement on random guessing.
 
 ---
 
